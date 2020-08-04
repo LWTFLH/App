@@ -1,0 +1,35 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target arm64-apple-ios8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BSGridCollectionViewLayout
+@_exported import BSGridCollectionViewLayout
+import Swift
+import UIKit
+@objc @_inheritsConvenienceInitializers final public class GridCollectionViewLayout : UIKit.UICollectionViewLayout {
+  final public var itemSpacing: CoreGraphics.CGFloat {
+    get
+    set(value)
+  }
+  final public var itemsPerRow: Swift.Int {
+    get
+    set(value)
+  }
+  final public var itemHeightRatio: CoreGraphics.CGFloat {
+    get
+    set(value)
+  }
+  final public var itemSize: CoreGraphics.CGSize {
+    get
+  }
+  @objc override final public func prepare()
+  @objc override final public var collectionViewContentSize: CoreGraphics.CGSize {
+    @objc get
+  }
+  @objc override final public func layoutAttributesForElements(in rect: CoreGraphics.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @objc override final public func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @objc override final public func shouldInvalidateLayout(forBoundsChange newBounds: CoreGraphics.CGRect) -> Swift.Bool
+  @objc override final public func layoutAttributesForDecorationView(ofKind elementKind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @objc override final public func layoutAttributesForSupplementaryView(ofKind elementKind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @objc deinit
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
